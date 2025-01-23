@@ -12,9 +12,7 @@ export default function Home() {
 
   return (
     <>
-    <div>
-      {tasks?.map( ({_id, text}) => <div key={_id}> {text}</div>   )}
-    </div>
+      <div>{tasks?.map((task) => <div>{task.text}</div>)}</div>
     </>
   );
 }

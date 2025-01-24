@@ -5,19 +5,20 @@ import styles from "./page.module.css";
 
 import { useConvexAuth, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
-import {  SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
+import { SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
 
 export default function Home() {
-  const tasks = useQuery(api.tasks.get);
+  const { isLoading, isAuthenticated } = useConvexAuth();
+  const { user } = useUser();
 
-    const { isLoading, isAuthenticated } = useConvexAuth();
-    const {user} = useUser();
+  console.log("isauth", isAuthenticated);
+  console.log("user", user?.id);
+  console.log("user", user);
 
   return (
     <>
       <SignInButton mode="modal"></SignInButton>
       <SignOutButton></SignOutButton>
-      <div>{tasks?.map((task) => <div key={task._id}>{task.text}</div>)}</div>
     </>
-  )
+  );
 }

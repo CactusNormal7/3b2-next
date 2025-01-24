@@ -6,4 +6,9 @@ export default defineSchema({
     isCompleted: v.boolean(),
     text: v.string(),
   }),
+
+  users: defineTable({
+    name: v.string(),
+    externalId: v.string(),
+  }).index("byExternalId", ["externalId"]),
 });

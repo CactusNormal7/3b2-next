@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --black: #272936;
+    --white: #a3a5b1;
+    --green1: #85bdbc;
+    --green2: #beddd8;
+    --pink: #f0e5e1;
+}
+
+/* black : var(--black) */
+/* white : var(--white) */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.basic-button {
+    padding: 10px 25px 10px 25px;
+    background-color: var(--black);
+    border: 0px solid;
+    font-size: 15px;
+    color: var(--white);
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: 0.14s ease;
+    box-sizing: border-box;
+}
+
+.basic-button:hover {
+    padding: 10px 35px 10px 35px;
+}
+
+.basic-input {
+    padding: 15px 25px 15px 45px;
+    background-color: var(--black);
+    border: 0px solid;
+    font-size: 15px;
+    color: var(--white);
+    font-weight: bolder;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: 0.14s ease;
+    box-sizing: border-box;
+}
+
+.basic-input:hover {
+    padding: 15px 35px 15px 35px;
+}
+
+.basic-button:active {
+    transform: scale(0.8);
+    transition: transform 0.1s ease;
+}
+
+//TODO ça ne marche pas sur l'icone quand je clique
+.basic-input:active {
+    transition: transform 0.1s ease;
+    transform: scale(0.9);
+}
+
+.search-icon {
+    color: var(--white);
+    transform: translateX(30px);
+}
+
+// clerk style
+.cl-avatarBox {
+    width: 2.75rem;
+    height: 2.75rem;
+}

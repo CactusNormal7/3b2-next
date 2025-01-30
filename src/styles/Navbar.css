@@ -1,19 +1,22 @@
 :root {
   --black: #272936;
   --white: #a3a5b1;
+  --green1 : #85bdbc;
+  --green2 : #beddd8;
+  --pink : #f0e5e1;
 }
 
 #navbar-main-div {
   width: 100vw;
   height: 60px;
   display: flex;
-  align-items: center; /* Centre verticalement */
+  align-items: center;
   padding: 0 20px;
-  position: relative; /* Permet le centrage absolu */
+  position: relative; 
 }
 
 #main-content {
-  flex: 1; /* Prend tout l'espace à gauche */
+  flex: 1; 
   background-color: white;
   padding: 8px;
 }
@@ -22,7 +25,7 @@
   display: flex;
   margin-right: 30px;
   align-items: center;
-  gap: 20px; /* Ajuste l’espace entre les boutons */
+  gap: 20px;
 }
 
 #stucked-right-part.item {
@@ -53,7 +56,7 @@
 .nav-link-div {
   position: absolute;
   left: 45%;
-  transform: translateX(-50%); /* Centre horizontalement */
+  transform: translateX(-50%); 
   display: flex;
   flex-direction: row;
   gap: 25px;

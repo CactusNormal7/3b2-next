@@ -6,6 +6,7 @@ import { SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 
 
+
 export default function Home() {
   const { isLoading, isAuthenticated } = useConvexAuth();
   const { user, isLoaded } = useUser(); 

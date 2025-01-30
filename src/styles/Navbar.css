@@ -1,0 +1,32 @@
+#navbar-mai-div {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  border: 1px solid #ccc;
+}
+
+#stucked-right-part {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: rgba(0, 0, 255, 0.1);
+  width: auto;
+  padding: 8px;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+#main-content {
+  flex: 1;
+  background-color: white;
+  padding: 8px;
+}
+
+#stucked-right-part.item {
+  margin: 5px 0;
+  white-space: nowrap;
+  display: flex;
+}
+

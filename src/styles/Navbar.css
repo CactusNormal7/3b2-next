@@ -1,27 +1,28 @@
-#navbar-mai-div {
+:root {
+  --black: #272936;
+  --white: #a3a5b1;
+}
+
+#navbar-main-div {
   width: 100vw;
   height: 60px;
   display: flex;
-  border: 1px solid #ccc;
+  align-items: center; /* Centre verticalement */
+  padding: 0 20px;
+  position: relative; /* Permet le centrage absolu */
+}
+
+#main-content {
+  flex: 1; /* Prend tout l'espace à gauche */
+  background-color: white;
+  padding: 8px;
 }
 
 #stucked-right-part {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-items: flex-end;
-  background-color: rgba(0, 0, 255, 0.1);
-  width: auto;
-  padding: 8px;
+  margin-right: 30px;
   align-items: center;
-  gap: 10px;
-  min-width: 0;
-}
-
-#main-content {
-  flex: 1;
-  background-color: white;
-  padding: 8px;
+  gap: 20px; /* Ajuste l’espace entre les boutons */
 }
 
 #stucked-right-part.item {
@@ -30,3 +31,30 @@
   display: flex;
 }
 
+.navbar-link {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bolder ;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+.navbar-link:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.nav-button-div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.nav-link-div {
+  position: absolute;
+  left: 45%;
+  transform: translateX(-50%); /* Centre horizontalement */
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}

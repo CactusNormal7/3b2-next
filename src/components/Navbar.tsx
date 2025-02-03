@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from 'next/link';
-import "../styles/Navbar.css";
+import "../styles/Navbar.scss";
 import { NavAuthSection } from "@/components/NavAuthSection";
 
 export default function Navbar() {

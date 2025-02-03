@@ -36,6 +36,8 @@ export function NavAuthSection() {
           </>
         )}
 
+
+        {/*TODO (iconized button / input)  make a component for this*/}
         <form>
           <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon"/>
           <input id="navbar-input" className="basic-input" placeholder="Search"/>

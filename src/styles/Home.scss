@@ -1,9 +1,9 @@
+
 #home-page-container {
   display: flex;
   flex-direction: column;
   width: 100vw;
   min-height: 100vh;
-  background-color: green;
 }
 
 #home-container-1 {
@@ -12,7 +12,41 @@
 }
 
 #home-container-1 {
-  background-color: red;
+  background-color: white;
   width: 100vw;
-  height: 500px;
+  height: 700px;
+  flex-direction: row;
+  display: flex;
+}
+
+#home-container-1-left-part {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 200px;
+  flex: 1;
+}
+
+#home-container-1-right-part {
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  display: flex;
+  flex: 1;
+}
+
+.main-title {
+  font-size: 60px;
+  font-weight: bolder;
+  padding: 20px;
+  color: var(--black);
+}
+
+.main-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+  opacity: 60%;
+  width: 80%;
+  padding: 20px;
 }

@@ -27,6 +27,7 @@
     border-radius: 5px;
     box-shadow: none;
     transition: 0.14s ease;
+    min-height: 48px;
     box-sizing: border-box;
 }
 
@@ -57,7 +58,7 @@
     transition: transform 0.1s ease;
 }
 
-//TODO ça ne marche pas sur l'icone quand je clique
+//TODO (fix) icon color is strange when clicked, fix this
 .basic-input:active {
     transition: transform 0.1s ease;
     transform: scale(0.9);

@@ -16,8 +16,10 @@ export default function Navbar() {
           <Link className="navbar-link" href="/">Tabs</Link>
           <Link className="navbar-link" href="/">Test</Link>
         </div>
+
         <NavAuthSection />
-      </section>
+      
+     </section> 
     </div>
   );
 }

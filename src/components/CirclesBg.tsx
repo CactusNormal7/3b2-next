@@ -10,6 +10,7 @@ export function CirclesBg() {
 			<div className="circle" id="circle1"></div>
 			<div className="circle" id="circle4"></div>
 			<div className="circle" id="circle3"></div>
+			<img src="guitar.svg" alt="" />
 		</>
 	);
 }

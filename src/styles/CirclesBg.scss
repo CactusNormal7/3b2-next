@@ -41,6 +41,15 @@
   background-color: white;
 }
 
+img {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  width: 700px;
+  height: auto;
+  rotate: 60deg;
+}
+
 @media (max-width: 1050px) {
 
 }

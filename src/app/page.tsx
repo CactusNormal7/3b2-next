@@ -3,6 +3,7 @@
 //import { api } from "../../convex/_generated/api";
 import Navbar from "@/components/Navbar";
 import "../styles/Home.scss"
+import { BasicButton } from "@/components/BasicButton";
 
 export default async function Home() {
   return (
@@ -20,8 +21,7 @@ export default async function Home() {
 
               <h3 className="main-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut la</h3>
 
-              {/*TODO (iconized button / input)  make a component for this and import it here*/}
-              <button style={{ marginLeft: "20px", marginTop: "30px", }} className="basic-button">Learn more  </button>
+              <BasicButton text="Learn more"></BasicButton>
             </div>
           </div>
 

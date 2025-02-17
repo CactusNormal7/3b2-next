@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import {useConvexAuth} from "convex/react";
+import { BasicButton } from "./BasicButton";
 
 export function NavAuthSection() {
 
@@ -24,7 +25,7 @@ export function NavAuthSection() {
         {(isLoaded && !isLoading) ? (
           !isAuthenticated ? (<>
             <SignInButton mode="modal">
-              <button className="basic-button">Sign in</button>
+              <BasicButton text="Sign in"></BasicButton>
             </SignInButton>
           </>) : (
             <>

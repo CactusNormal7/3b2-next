@@ -2,6 +2,7 @@
 
 //import { api } from "../../convex/_generated/api";
 import Navbar from "@/components/Navbar";
+import { CirclesBg } from "@/components/CirclesBg";
 import "../styles/Home.scss"
 import { BasicButton } from "@/components/BasicButton";
 
@@ -27,6 +28,7 @@ export default async function Home() {
 
 
           <div id="home-container-1-right-part">
+            <CirclesBg/>
           </div>
 
         </section>

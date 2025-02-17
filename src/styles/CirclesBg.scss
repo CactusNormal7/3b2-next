@@ -41,7 +41,8 @@
   background-color: white;
 }
 
-img {
+.guitar-svg {
+  // z-index: -1;
   position: absolute;
   right: 100px;
   top: 100px;
@@ -50,6 +51,9 @@ img {
   rotate: 60deg;
 }
 
-@media (max-width: 1050px) {
+// .guitar-svg:hover {
+//   transform: scale(2);
+// }
 
+@media (max-width: 1050px) {
 }

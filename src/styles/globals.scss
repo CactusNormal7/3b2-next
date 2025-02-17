@@ -1,59 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
 
 :root {
   --black: #272936;
+  --deepBlack : #000000;
   --white: #a3a5b1;
   --green1: #85bdbc;
   --green2: #beddd8;
   --pink: #f0e5e1;
 }
 
-/* black : var(--black) */
-/* white : var(--white) */
 
 * {
-  padding: 0px;
-  margin: 0px;
+  // padding: 0px;
+  // margin: 0px;
   font-family: "Montserrat", sans-serif;
 }
-.basic-button {
-  padding: 10px 25px;
-  background-color: var(--black);
-  border: 0px solid;
-  font-size: 15px;
-  color: var(--white);
-  font-weight: bolder;
-  border-radius: 5px;
-  box-shadow: none;
-  transition: 0.14s ease;
-  min-height: 48px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.basic-button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--black);
-  border-radius: 5px;
-  transition: 0.14s ease;
-  z-index: -1;
-}
-
-.basic-button:hover::after {
-  width: calc(100% + 20px);
-  left: -10px;
-}
-
-.basic-button:active {
-  transform: scale(0.8);
-  transition: transform 0.1s ease;
-}
-
 
 //TODO faire un component de l'input
 .input-container {

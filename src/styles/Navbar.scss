@@ -1,10 +1,13 @@
-
 :root {
   --black: #272936;
   --white: #a3a5b1;
-  --green1 : #85bdbc;
-  --green2 : #beddd8;
-  --pink : #f0e5e1;
+  --green1: #85bdbc;
+  --green2: #beddd8;
+  --pink: #f0e5e1;
+}
+
+.res {
+  display: none;
 }
 
 #navbar-main-div {
@@ -17,7 +20,7 @@
 }
 
 #main-content {
-  flex: 1; 
+  flex: 1;
   padding: 8px;
 }
 
@@ -37,7 +40,7 @@
 .navbar-link {
   text-decoration: none;
   color: var(--black);
-  font-weight: bolder ;
+  font-weight: bolder;
   font-size: 18px;
   transition: 0.2s ease;
 }
@@ -63,4 +66,21 @@
   display: flex;
   flex-direction: row;
   gap: 25px;
+}
+
+@media (max-width: 1100px) {
+  .res {
+    display: flex;
+  }
+
+  .nav-link-div {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #fef7e5;
+    width: 0;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
 }

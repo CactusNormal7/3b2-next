@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+  z-index: -2;
+}
 
 #home-page-container {
   display: flex;
@@ -12,7 +16,6 @@
 }
 
 #home-container-1 {
-  background-color: white;
   width: 100vw;
   height: 700px;
   flex-direction: row;
